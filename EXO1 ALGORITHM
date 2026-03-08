@@ -1,0 +1,188 @@
+*(1)CALCUL DU CARRE D'UN NOMBRE*
+Variable
+   n: reel
+   n_square: reel
+Début
+   AFFICHAGE "entrez un nombre:"
+   LIRE(n)
+   n_square=n*n
+   AFFICHAGE "le carré de ce nombre est:"
+   AFFICHAGE "Valeur de n_square"
+Fin
+
+
+*(2)RESOLUTION D'UNE EQUATION LINEAIRE*
+Variable
+   x: reel
+   a: reel
+   b: reel
+   c: reel
+Début
+   AFFICHAGE "Equation du type: ax+b=c"
+   AFFICHAGE "entrez la valeur de a:"
+   LIRE(a)
+   AFFICHAGE "entrez la valeur de b:"
+   LIRE(b)
+   AFFICHAGE "entrez la valeur de c:"
+   LIRE(c)
+   x=((c-b)/a)
+   AFFICHAGE "la solution est:"
+   AFFICHAGE "Valeur de x"
+Fin
+
+
+*(3)CALCUL DU DISCRIMINANT D'UN POLYNÔME DU SECOND DEGRE*
+Variable
+   a: reel
+   b: reel
+   c: reel
+   delta: reel
+Début
+   AFFICHAGE "Equation du type: a(x^2)+bx+c=0" 
+   AFFICHAGE "entrez la valeur de a:"
+   LIRE(a)
+   AFFICHAGE "entrez la valeur de b:"
+   LIRE(b)
+   AFFICHAGE "entrez la valeur de c:"
+   LIRE(c)
+   delta=(b*b)-(4(a*c))
+   AFFICHAGE "Le discriminant de cette équation à pour valeur: "
+   AFFICHAGE "Valeur de delta"
+Fin
+
+
+*(4)RECHERCHE DES COORDONNEES DU POINT D'INTERSECTION DE 2 DROITES*
+Variable
+   a1: reel
+   b1: reel
+   a2: reel
+   b2: reel
+   xI: reel
+   yI: reel
+Début
+   AFFICHAGE ¨Pour deux droites y1=(a1)x+b1 et y2=(a2)x+b2,"
+   AFFICHAGE "entrez la valeur de a1:" 
+   LIRE(a1)
+   AFFICHAGE "entrez la valeur de b1:"
+   LIRE(b1)
+   AFFICHAGE "entrez la valeur de a2:"
+   LIRE(a2)
+   AFFICHAGE "entrez la valeur de b2:"
+   LIRE(b2)
+   xI=(b2-b1)/(a1-a2)
+   yI=(x*a1)+b1
+   AFFICHAGE "y1 et y2 se croisent au point de coordonnées xI et yI de valeurs respectives:"
+   AFFICHAGE "Valeur de xI"
+   AFFICHAGE "Valeur de yI"
+Fin
+
+
+*(5)IMAGE PAR UNE FONCTION AFFINE DE R DANS R*
+Variable
+   a: reel
+   b: reel
+   x: reel
+   y: reel
+Début
+   AFFICHAGE "Soit la fonction f définie sur R par f(x)=ax+b"
+   AFFICHAGE "entrez la valeur de a: "
+   LIRE(a)
+   AFFICHAGE "entrez la valeur de b: "
+   LIRE(b)
+   AFFICHAGE "entrez une valeur de x: "
+   LIRE(x)
+   y=(a*x)+b
+   AFFICHAGE "Voici l'image de cet élément:"
+   AFFICHAGE "Valeur de y"
+Fin
+
+
+*(6)SOMME DE 0 A n DES TERMES D'UNE SUITE ARITHMETIQUE*
+Variable
+   U0: reel
+   Un: reel
+   n: reel
+   r: reel
+   Somme: reel
+Début  
+   AFFICHAGE "(Un) est une suite arithmétique definie sur N connaissant U0 et sa raison r" 
+   AFFICHAGE "Définir U0:"
+   LIRE(U0)
+   AFFICHAGE "entrez la valeur de r:"
+   LIRE(r)
+   AFFICHAGE "Donnez la valeur de n pour le dernier terme de la somme:"
+   LIRE(n)
+   Un=U0+(n*r)
+   Somme=(n+1)*(U0+Un)/2
+   AFFICHAGE "Le calcul de cette somme donne:"
+   AFFICHAGE "Valeur de Somme"
+Fin
+
+
+*(7)CALCUL DE LA DUREE "t" D'UN TRAJET (AVEC VITESSE CONSTANTE ET DISTANCE CONNUES)*
+Variable
+   distance: reel
+   t: reel
+   vitesse: reel
+Début
+   AFFICHAGE "Avec vitesse en km/h, distance en km et la durée en minutes:"
+   AFFICHAGE "entrez la vitesse moyenne:"
+   LIRE(vitesse)
+   AFFICHAGE "entrez la distance:"
+   LIRE(distance)
+   t=60*distance/vitesse
+   AFFICHAGE "Voici la durée du trajet:"
+   AFFICHAGE "Valeur de t"
+Fin
+
+
+*(8)CALCUL DE LA CIRCONFERENCE D'UN CERCLE*
+Variable
+   r: reel
+   circumference: reel
+Début
+   AFFICHAGE "Pour un cercle, avec rayon en cm"
+   AFFICHAGE "entrez le rayon:"
+   LIRE(r)
+   circumference=2*3.1416*r
+   AFFICHAGE "Sa circonférence est:"
+   AFFICHAGE "Valeur de circumference"
+Fin
+
+
+*(9)CALCUL DE LA SURFACE D'UN TRAPEZE*
+Variable
+   G_base: reel
+   P_base: reel
+   hauteur: reel
+   surface: reel
+Début
+   AFFICHAGE "L'unité de mesure est en cm, pour un trapèze:"
+   AFFICHAGE "entrez la longueur de la grande base:"
+   LIRE(G_base)
+   AFFICHAGE "entrez la longueur de la petite base:"
+   LIRE(P_base)
+   AFFICHAGE "entrez sa hauteur:"
+   LIRE(hauteur)
+   surface=(G_base+P_base)*hauteur/2
+   AFFICHAGE "Sa surface en cm2 est:"
+   AFFICHAGE "Valeur de surface"
+Fin
+
+
+*(10)CALCUL DU VOLUME D'UN CONE*
+Variable
+   r: reel
+   h: reel
+   volume: reel
+Début
+   AFFICHAGE "Pour un cône, avec rayon en cm"
+   AFFICHAGE "entrez son rayon:"
+   LIRE(r)
+   AFFICHAGE "entrez la hauteur:"
+   LIRE(h)
+   volume=h*r*r*3.1416/3
+   AFFICHAGE "Son volume en cm3 est:"
+   AFFICHAGE "Valeur de volume"
+Fin   
+   
